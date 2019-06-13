@@ -4,6 +4,7 @@ form#new-post {
   margin: 30px auto 0;
   padding: 30px;
   background: #fff;
+  border-radius: 4px;
   border: 1px solid #ddd;
 
   display: flex;
@@ -14,7 +15,8 @@ form#new-post input {
   margin-bottom: 10px;
 }
 
-form#new-post input[type=text] {
+form#new-post input[type=text],
+form#new-post label {
   height: 38px;
   border-radius: 4px;
   border: 1px solid #ddd;
@@ -22,11 +24,28 @@ form#new-post input[type=text] {
   font-size: 14px;
 }
 
+form#new-post input[type=file] {
+  display: none;
+}
+
+form#new-post label {
+  margin-bottom: 10px;
+  
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+form#new-post label img {
+  margin-right: 10px;
+}
+
 form#new-post button {
   padding: 10px 20px;
   border-radius: 4px;
   border: 0;
-  background: #7159c1;
+  background: #3897f0;
   color: #FFF;
   font-size: 14px;
   font-weight: bold;
